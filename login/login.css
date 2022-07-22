@@ -1,0 +1,65 @@
+.wrapper{
+    margin: 0 auto;
+    width: 1000px
+}
+
+.ground{
+    background-color: #D9E5FF;
+    height: 600px;
+}
+
+.header{
+    font-size:50px;
+    float: auto;
+    margin-top: 40px;
+    height: 70px;
+    margin-left: 400px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.image{
+    height: 80px;
+    margin-left: 60px; 
+}
+
+.center{
+    width: 400px;
+    height: 250px;
+    margin-left: 300px;
+    vertical-align: middle;
+    background-color: white;
+}
+
+.main{
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size:20px;
+}
+
+.id{
+    width:300px;
+    height:30px;
+}
+
+.pass{
+    width:300px;
+    height:30px;
+}
+
+.footer{
+    font-size:20px;
+    margin-top: 20px;
+    margin-left: 60px;
+    padding: 5px 40px 5px 40px;
+    color: white;
+    background-color: #2DFF57;
+}
+
+.under{
+    font-size:20px;
+    margin-top: 50px;
+    margin-left: 55px;
+    float: auto;
+    color: 	#00AA00;
+}
