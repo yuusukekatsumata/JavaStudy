@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+
+ <!-- Bootstrapの設定 -->
+    <link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}" rel="stylesheet"></link>
+    <script th:src="@{/webjars/jquery/1.11.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<title>編集画面</title>
+
+<link rel="stylesheet" href="/css/edit.css"></head>
+</head>
+<body>
+<div class="wrapper"> 
+ 	<div class="ground">
+    <h1 class="header">編集</h1>
+    <form th:action="@{/member/{id}/edit(id=*{id})}" th:method="post" th:object="${member}">
+    
+     <div class="table">   
+        <div class="name">
+             <label for="name">名前</label><br>
+             <input type="text" name="name" th:field="*{name}">
+             <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style = color:red></span>
+       	</div>
+       	
+       <div class="age">
+             <label for="age">年齢</label><br>
+             <input type="text" name="age" th:field="*{age}">
+             <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}" style = color:red></span>
+       	</div> 
+    </div>    
+        <p>
+        <button type="submit" class="footer1">更新</button>
+        </p>
+    </form>
+    <a href="/member" class="footer2">一覧画面へ</a>
+	</div>
+</div>
+</body>
+</html>

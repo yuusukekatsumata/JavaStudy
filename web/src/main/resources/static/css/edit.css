@@ -1,0 +1,27 @@
+#wrapper {
+    margin: 0 auto;
+    width: 1000px
+}
+
+.ground{
+	height: 600px;
+}
+
+.header{
+    font-size:30px;
+    height: 40px;
+    margin-left: 670px;
+    padding-top: 30px;
+}
+
+.table{
+	margin-left: 630px;
+}
+
+.footer1{
+	margin-left: 680px;
+}
+
+.footer2{
+	margin-left: 662px;
+}
